@@ -16,10 +16,25 @@ module.exports = {
         '2xl': '1496px'
       }
     },
-    fontFamily: {
-      serif: ["Montserrat", "sans-serif"],
-    },
     extend: {
+      fontFamily: {
+        serif: ["Montserrat", "sans-serif"],
+      },
+      keyframes: {
+        "image-fade-in": {
+          "0%": {
+            opacity: 0,
+            right: "-100px",
+          },
+          "100%": {
+            opacity: 1,
+            right: "0px",
+          }
+        },
+      },
+      animation: {
+        imageFadeIn: "image-fade-in 2s ease-in-out",
+      },
       colors: {
         "charcoal": "#39455E",
         "charcoal-light": "#7886A2",
