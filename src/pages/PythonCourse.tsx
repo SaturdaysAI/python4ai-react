@@ -3,6 +3,7 @@ import CourseHero from "../components/CourseHero"
 import CourseInfo from "../components/CourseInfo"
 import { CourseSectionTitle, CourseSectionDescription, CourseSectionImage, CourseSection } from "../components/CourseSection"
 import { CourseExtra, CourseExtraItem } from "../components/CourseExtra"
+import { CourseFAQItem, CourseFAQSection } from "../components/CourseFAQ"
 import CoursePrice from "../components/CoursePrice"
 import CTAButton from "../components/CTAButton"
 import Clock from "../assets/clock.svg"
@@ -105,6 +106,61 @@ const PythonCourse: FC = () => {
         />
       </CourseExtra>
       <CoursePrice />
+      <CourseFAQSection>
+        <CourseFAQItem
+          question="¿Por qué debería inscribirme?"
+          answer="El programa de Python 4 AI te ofrece la oportunidad de aprender python, el lenguaje de programación más importante y más utilizado por los científicos de datos en la actualidad. Iníciate en el fascinante campo de la ciencia de datos y aprende Python con la ayuda de mentores y la comunidad."
+          topLine={false}
+        />
+        <CourseFAQItem
+          question="¿Cómo puedo saber si este programa es adecuado para mí?"
+          answer="Si estás interesado en dar el primer paso en el campo de la Ciencia de Datos, este curso es para ti. Te enseñará rápidamente las herramientas de programación de ciencia de datos fundamentales. Este curso no requiere ningún conocimiento previo, por lo que puedes empezar ahora."
+          answer2="Si te decides por Python 4 AI, también aprenderás bibliotecas de datos especializadas para Python, incluyendo Pandas y Numpy. Al aprender estas habilidades de programación fundamentales, estarás listo para avanzar en tu carrera en los datos."
+          topLine={true}
+        />
+        <CourseFAQItem
+          question="¿Me servirá el curso si ya se programar en otros lenguajes?"
+          answer="Desde luego. Todo lo que cubre el curso te ayudará a definir los pilares fundamentales de la programación en Python, desde 0 hasta que seas capaz de crear un pequeño proyecto o prueba de I.A."
+          topLine={true}
+        />
+        <CourseFAQItem
+          question="¿Cómo es la metodología?"
+          answer="Aunque el método de aprendizaje de cada persona es diferente, podemos contarte más sobre nuestra metodología de enseñanza: al principio te daremos un breve resumen del material, te daremos ejercicios prácticos con soluciones para alimentar tu cerebro. Y finalmente, tendrás que pasar algunos retos si quieres ir al siguiente módulo."
+          answer2="Durante este proceso verás que la parte importante del contenido es propia, pero complementamos con los mejores recursos de Internet. La magia de este programa se centra en el contacto con la comunidad y los mentores."
+          topLine={true}
+        />
+        <CourseFAQItem
+          question="¿El curso es un pago único o una suscripción?"
+          answer="Es un pago único. Una vez comprado es tuyo para siempre, sin ningún pago adicional. Podrás asistir además a todas las sesiones en vivo de resolución de dudas."
+          topLine={true}
+        />
+        <CourseFAQItem
+          question="¿Tendré apoyo durante el proceso?"
+          answer="Sí. Por un lado, los dos profesores participaremos a diario en la comunidad privada que acompaña el curso, gestionada dentro de la plataforma. Además, cada varias semanas organizaremos sesiones en vivo para responder preguntas sobre temáticas concretas."
+          topLine={true}
+        />
+        <CourseFAQItem
+          question="¿Hay un límite de tiempo para realizar el curso?"
+          answer="No. Lo recomendable es realizar un módulo a la semana aproximadamente, por lo que tardarías un mes y medio aproximadamente en realizar el programa completo, pero según tu disponibilidad de tiempo y la profundidad con la que quieras trabajar cada punto puedes tardar más o menos. La información siempre estará disponible."
+          topLine={true}
+        />
+        <CourseFAQItem
+          question="¿En qué consiste el proyecto?"
+          answer="Te pondremos un reto para aplicar un sencillo algoritmo de I.A. y demuestres que has asimilado los conocimientos y habilidades."
+          topLine={true}
+        />
+        <CourseFAQItem
+          question="¿Y si no es lo que busco?"
+          answer="El dinero del programa va destinado a cubrir las necesidades de la organización global. Tienes 30 días para revisar el contenido del curso, y si no es lo que buscas te devolvemos el dinero. No hay riesgo."
+          topLine={true}
+        />
+      </CourseFAQSection>
+      <div className="mt-20 mb-10 flex flex-col justify-center items-center gap-y-8">
+        <CTAButton active={true} to="https://ti.to/saturdaysai/python-4-ai-program">Inscríbete ahora</CTAButton>
+        <p className="text-center italic text-gunmetal text-xl font-light">
+          “La hoja de ruta para comenzar tu viaje desde 0 hasta aprender a programar I.A.”
+        </p>
+      </div>
     </div>
   )
 }
