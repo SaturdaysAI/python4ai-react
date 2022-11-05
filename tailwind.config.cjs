@@ -5,6 +5,12 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    color: {
+      charcoal: "#39455E",
+    },
+    fontFamily: {
+      serif: ["Montserrat", "sans-serif"],
+    },
     extend: {
       screens: {
         'xs': '300px',
