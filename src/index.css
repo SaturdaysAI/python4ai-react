@@ -4,3 +4,21 @@
 @tailwind components;
 @tailwind utilities;
 
+.course-hero-container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 680px) {
+  .course-hero-container {
+    grid-template-columns: 2fr 4fr;
+  }
+}
+
+
+@layer base {
+  html {
+    font-family: 'Montserrat', sans-serif;
+    color: #1A1F2F;
+  }
+}

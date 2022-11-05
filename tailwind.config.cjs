@@ -5,13 +5,27 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    color: {
-      charcoal: "#39455E",
+    container: {
+      center: true,
+      screens: {
+        xs: '300px',
+        sm: '550px',
+        md: '680px',
+        lg: '1150px',
+        xl: '1320px',
+        '2xl': '1496px'
+      }
     },
     fontFamily: {
       serif: ["Montserrat", "sans-serif"],
     },
     extend: {
+      colors: {
+        "charcoal": "#39455E",
+        "charcoal-light": "#7886A2",
+        "tangerine": "#FF9D5A",
+        "gunmetal": "#1A1F2F",
+      },
       screens: {
         'xs': '300px',
 

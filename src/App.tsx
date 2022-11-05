@@ -23,8 +23,8 @@ const App: FC = () => {
             <Route path="*" element={<ErrorPage />} />
           </Routes>
         </Suspense>
-        <Footer />
       </Layout>
+      <Footer />
     </Router>
   )
 }
