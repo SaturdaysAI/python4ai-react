@@ -21,4 +21,7 @@
     font-family: 'Montserrat', sans-serif;
     color: #1A1F2F;
   }
+  b {
+    font-weight: 600;
+  }
 }

@@ -22,8 +22,8 @@ const CourseHero: FC<CourseHeroProps> = ({title1, title2, description, image, al
                 </h1>
                 <p className="text-xl my-10">{description}</p>
                 <div className="flex flex-col gap-y-4">
-                    <CTAButton active={true}>Inscríbete ahora</CTAButton>
-                    <CTAButton active={false}>Descargar programa</CTAButton>
+                    <CTAButton to="https://ti.to/saturdaysai/python-4-ai-program" active={true}>Inscríbete ahora</CTAButton>
+                    <CTAButton to="https://drive.google.com/file/d/1ez2SnuCfDJWDwis9g9FZXwS9Nns3MY5T/view?usp=sharing" active={false}>Descargar programa</CTAButton>
                 </div>
             </div>
             <div className="relative">

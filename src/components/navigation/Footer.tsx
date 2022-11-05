@@ -14,7 +14,7 @@ const Footer: FC = () => {
   const socialIconStyle = "w-6 h-6 text-white hover:text-tangerine transition-colors duration-200"
 
   return (
-    <footer className="flex flex-row justify-between items-center py-20 px-10 bg-gunmetal">
+    <footer className="flex flex-row justify-between items-center py-20 px-10 bg-gunmetal mt-20">
       {/* Logo, main links and log in link */}
       <Link to="/">
         <img src={Logo} alt="Saturdays AI Logo" className="h-12" />
