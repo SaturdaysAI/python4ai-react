@@ -37,7 +37,7 @@ module.exports = {
       },
       colors: {
         "charcoal": "#39455E",
-        "charcoal-light": "#7886A2",
+        "charcoal-light": "#7886a2",
         "tangerine": "#FF9D5A",
         "gunmetal": "#1A1F2F",
       },

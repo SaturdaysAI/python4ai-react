@@ -8,6 +8,9 @@ import Navbar from "./components/navigation/Navbar"
 import Footer from "./components/navigation/Footer"
 import Layout from "./components/layout/Layout"
 import ErrorPage from "./pages/ErrorPage"
+import Courses from "./pages/Courses"
+import About from "./pages/About"
+import MasterIAOnline from "./pages/MasterIAOnline"
 const Home = lazy(() => import("./pages/Home"))
 const PythonCourse = lazy(() => import("./pages/PythonCourse"))
 
@@ -20,6 +23,9 @@ const App: FC = () => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/python4ai" element={<PythonCourse />} />
+            <Route path="/online" element={<Courses />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/master-ia-online" element={<MasterIAOnline />} />
             <Route path="*" element={<ErrorPage />} />
           </Routes>
         </Suspense>

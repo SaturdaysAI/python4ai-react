@@ -1,11 +1,11 @@
 import { FC } from "react"
 import CourseHero from "../components/CourseHero"
-import CourseInfo from "../components/CourseInfo"
+import { CourseInfo } from "../components/CourseInfo"
 import { CourseSectionTitle, CourseSectionDescription, CourseSectionImage, CourseSection } from "../components/CourseSection"
 import { CourseExtra, CourseExtraItem } from "../components/CourseExtra"
 import { CourseFAQItem, CourseFAQSection } from "../components/CourseFAQ"
 import CoursePrice from "../components/CoursePrice"
-import CTAButton from "../components/CTAButton"
+import {CTAButton} from "../components/CTAButton"
 import Clock from "../assets/clock.svg"
 import PlayButton from "../assets/play-button.svg"
 import Book from "../assets/book.svg"
@@ -26,6 +26,8 @@ const PythonCourse: FC = () => {
         description="Aprende a programar en I.A. desde 0. Para ello, hemos preparado una hoja de ruta personalizada para transformar tus skills de python en poco tiempo, de forma divertida y menos estresante."
         image="/pythonCourseHero.webp"
         alt="Python course hero"
+        subtitle={true}
+        ctaButtons={true}
       />
       <section className="mt-36 flex justify-center flex-wrap gap-10">
         <CourseInfo

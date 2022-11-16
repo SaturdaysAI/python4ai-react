@@ -20,4 +20,24 @@ const CourseInfo: FC<CourseInfoProps> = ({logo, messageDescription, messageTitle
   )
 }
 
-export default CourseInfo
+interface CourseDetailProps {
+  icon: string,
+  title: string,
+  description: string,
+}
+
+const CourseDetail: FC<CourseDetailProps> = ({ icon, title, description}) => {
+  return (
+    <div className="flex gap-5 flex-col md:flex-row items-center md:items-start w-80">
+      <img src={icon} alt="Course Detail Icon" className="h-10 w-10" />
+      <div className="flex flex-col gap-y-2">
+        <h3 className="text-xl font-semibold text-center md:text-left">{title}</h3>
+        <p className="text-lg font-light text-center md:text-left">
+          {description}
+        </p>
+      </div>
+    </div>
+  )
+}
+
+export { CourseInfo, CourseDetail }

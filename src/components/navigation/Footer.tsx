@@ -15,30 +15,30 @@ const Footer: FC = () => {
 
   return (
     <footer className="flex flex-col gap-y-12 py-16 px-10 bg-gunmetal mt-20">
-      <div className="flex flex-row justify-between items-center">
+      <div className="flex flex-row flex-wrap justify-between items-center">
           {/* Logo, main links and log in link */}
-        <Link to="/">
+        <Link className="mx-auto" to="/">
           <img src={Logo} alt="Saturdays AI Logo" className="h-12" />
         </Link>
-        <div className="flex flex-row space-x-10">
+        <div className="flex flex-row space-x-10 mx-auto my-10 lg:my-0">
           <NavLink inFooter={true} to="https://saturdays.ai/master-ia-online/">Máster</NavLink>
           <NavLink inFooter={true} to="https://saturdays.ai/online/">Courses</NavLink>
           <NavLink inFooter={true} to="https://saturdays.ai/cities/">Cities</NavLink>
           <NavLink inFooter={true} to="https://saturdays.ai/proyectos/">Projects</NavLink>
           <NavLink inFooter={true} to="https://saturdays.ai/create-your-own-ai-saturdays/">Join Us</NavLink>
-          {/* burger menu */}
-          <div className="flex flex-col justify-center relative">
+
+          {/* <div className="flex flex-col justify-center relative">
             <button onClick={() => setIsOpen(!isOpen)} className="flex items-center justify-center gap-x-2">
               <svg className="w-8 h-8 stroke-charcoal-light" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>
               </svg>
-              {/* down arrow icon */}
+
               <svg className="w-4 h-4 stroke-charcoal-light" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M19 9l-7 7-7-7"></path>
               </svg>
             </button>
-            {/* dropdown menu */}
-            {/* transition max height */}
+
+
             <div className={`absolute top-10 bg-white rounded-lg shadow-lg overflow-hidden w-40 transition-all duration-300 ease-in-out z-10
                             ${isOpen ? "max-h-96" : "max-h-0 pointer-events-none"}`}>
                 <NavLink inFooter={true} to="https://saturdays.ai/about/">About</NavLink>
@@ -50,9 +50,9 @@ const Footer: FC = () => {
                 <NavLink inFooter={true} to="https://saturdays.ai/partners/">Partners</NavLink>
                 <NavLink inFooter={true} to="https://saturdays.ai/contact/">Contact</NavLink>
               </div>
-          </div>
+          </div> */}
         </div>
-        <div className="flex flex-row flex-wrap justify-center space-x-10 space-y-4">
+        <div className="flex flex-row flex-wrap justify-center space-x-10 space-y-4 mx-auto">
           {/* social icons -> if they don't fit, they're put below them */}
           <a href="https://www.facebook.com/pg/AISaturdaysEsp/posts/" target="_blank" rel="noreferrer">
             <img src={FacebookLogo} alt="Facebook Logo" className={socialIconStyle} />

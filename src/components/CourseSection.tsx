@@ -17,13 +17,13 @@ const CourseSectionDescription: FC<PropsWithChildren<{}>> = ({children}) => {
 
 const CourseSectionImage: FC<{src: string, alt: string}> = ({src, alt}) => {
     return (
-        <LazyLoadImage src={src} alt={alt} className="w-full" />
+        <LazyLoadImage src={src} alt={alt} className="w-full order-first lg:-order-none" />
     )
 }
 
 const CourseSection: FC<PropsWithChildren<{}>> = ({children}) => {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 gap-x-20 items-center px-10 my-40">
+    <section className="grid grid-cols-1 lg:grid-cols-2 gap-x-20 gap-y-10 items-center px-10 my-32">
         {children}
     </section>
   )
