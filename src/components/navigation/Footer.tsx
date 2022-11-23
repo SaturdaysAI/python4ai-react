@@ -21,8 +21,8 @@ const Footer: FC = () => {
           <img src={Logo} alt="Saturdays AI Logo" className="h-12" />
         </Link>
         <div className="flex flex-row space-x-10 mx-auto my-10 lg:my-0">
-          <NavLink inFooter={true} to="https://saturdays.ai/master-ia-online/">Máster</NavLink>
-          <NavLink inFooter={true} to="https://saturdays.ai/online/">Courses</NavLink>
+          <NavLink inFooter={true} to="/master-ia-online/">Máster</NavLink>
+          <NavLink inFooter={true} to="/online/">Courses</NavLink>
           <NavLink inFooter={true} to="https://saturdays.ai/cities/">Cities</NavLink>
           <NavLink inFooter={true} to="https://saturdays.ai/proyectos/">Projects</NavLink>
           <NavLink inFooter={true} to="https://saturdays.ai/create-your-own-ai-saturdays/">Join Us</NavLink>

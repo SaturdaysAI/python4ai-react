@@ -34,20 +34,23 @@ const PythonCourse: FC = () => {
           logo={Clock}
           messageDescription="TIEMPO ESTIMADO"
           messageTitle="6 semanas"
-          description="El programa dura 6 semanas. De media cada persona dedica unas 5 horas semanales."
-        />
+        >
+          El programa dura 6 semanas. De media cada persona dedica unas 5 horas semanales.
+        </CourseInfo>
         <CourseInfo
           logo={PlayButton}
           messageDescription="INSCRÍBETE EN"
           messageTitle="Abril"
-          description="Obtén acceso a la plataforma inmediatamente después de la inscripción."
-        />
+        >
+          Obtén acceso a la plataforma inmediatamente después de la inscripción.
+        </CourseInfo>
         <CourseInfo
           logo={Book}
           messageDescription="PREREQUISITOS"
           messageTitle="Ninguno"
-          description="Sentirse cómodo con las matemáticas del instituto y con operaciones básicas de tu ordenador como abrir archivos, aplicaciones, copiar y pegar."
-        />
+        >
+          Sentirse cómodo con las matemáticas del instituto y con operaciones básicas de tu ordenador como abrir archivos, aplicaciones, copiar y pegar.
+        </CourseInfo>
       </section>
       <CourseSection>
         <CourseSectionImage src={LearningPlatform} alt="Learning platform" />

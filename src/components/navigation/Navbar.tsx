@@ -30,7 +30,7 @@ const Navbar: FC = () => {
     <nav className="flex flex-row justify-center lg:justify-between items-center py-2 lg:py-20 bg-white bg-opacity-80
                     sticky top-0 lg:relative z-10 backdrop-blur-lg">
       {/* Logo, main links and log in link */}
-      <Link className="order-last lg:order-none mx-auto" to="/">
+      <Link className="order-last lg:order-none mx-auto lg:mx-0" to="/">
         <img src={Logo} alt="Saturdays AI Logo" className="h-12" />
       </Link>
       {
@@ -53,7 +53,7 @@ const Navbar: FC = () => {
         ) : (
           <>
             <div className="flex flex-row space-x-10">
-              <NavLink currentRoute={route} to="https://saturdays.ai/master-ia-online/">Máster</NavLink>
+              <NavLink currentRoute={route} to="/master-ia-online/">Máster</NavLink>
               <NavLink currentRoute={route} to="/online/">Courses</NavLink>
               <NavLink currentRoute={route} to="https://saturdays.ai/cities/">Cities</NavLink>
               <NavLink currentRoute={route} to="https://saturdays.ai/proyectos/">Projects</NavLink>
@@ -73,7 +73,7 @@ const Navbar: FC = () => {
                 {/* transition max height */}
                 <div className={`absolute top-10 bg-white rounded-lg shadow-lg overflow-hidden w-40 transition-all duration-300 ease-in-out z-10
                                 ${isOpen ? "max-h-96" : "max-h-0 pointer-events-none"}`}>
-                    <NavLink to="https://saturdays.ai/about/">About</NavLink>
+                    <NavLink to="/about/">About</NavLink>
                     <NavLink to="https://saturdays.ai/podcast/">Podcast</NavLink>
                     <NavLink to="https://saturdays.ai/blog-y-noticias/">Blog</NavLink>
                     <NavLink to="https://saturdays.ai/ai-saturdays/">Ai Saturdays</NavLink>

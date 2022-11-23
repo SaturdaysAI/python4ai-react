@@ -1,7 +1,8 @@
 import { FC, PropsWithChildren } from 'react'
 interface CourseButtonProps {
     active?: boolean,
-    to: string
+    to: string,
+    orangeBg?: boolean
 }
 
 const CTAButton: FC<PropsWithChildren<CourseButtonProps>> = ({children, active, to}) => {
@@ -13,9 +14,13 @@ const CTAButton: FC<PropsWithChildren<CourseButtonProps>> = ({children, active, 
     )
 }
 
-const CourseButton: FC<PropsWithChildren<CourseButtonProps>> = ({children, to}) => {
+const CourseButton: FC<PropsWithChildren<CourseButtonProps>> = ({children, to, orangeBg}) => {
     return (
-        <a href={to} className="rounded-full py-4 px-8 text-lg font-normal border-2 w-fit bg-charcoal text-white mx-auto lg:mx-0">
+        <a href={to} className={`rounded-full py-4 px-8 text-lg font-normal  w-fit
+                               text-white mx-auto lg:mx-0 hover:scale-105 transition-transform duration-200
+                               ${orangeBg !== undefined && orangeBg === true ?
+                               "bg-tangerine border-0" :
+                               "bg-charcoal border-2"}`}>
             {children}
         </a>
     )
