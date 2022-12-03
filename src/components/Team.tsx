@@ -1,5 +1,5 @@
 import { FC } from "react"
-import teamData from "../assets/data/team.js"
+import teamData from "../assets/data/team"
 import LinkedinLogo from "../assets/social/linkedin.svg"
 
 interface TeamMemberProps {
