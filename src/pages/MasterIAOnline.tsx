@@ -98,7 +98,7 @@ const MasterIAOnline = () => {
                     <span>▶️</span>
                   </a>
                 `} />
-        <section className="mt-36 flex justify-center flex-wrap gap-10">
+        <section className="mt-16 flex justify-center flex-wrap gap-10">
           <CourseInfo
             logo={PlayButton}
             messageTitle="Crear un proyecto en 12 meses"
