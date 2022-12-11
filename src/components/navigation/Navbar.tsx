@@ -55,7 +55,7 @@ const Navbar: FC = () => {
             <div className="flex flex-row space-x-10">
               <NavLink currentRoute={route} to="/master-ia-online/">Máster</NavLink>
               <NavLink currentRoute={route} to="/online/">Courses</NavLink>
-              <NavLink currentRoute={route} to="https://saturdays.ai/cities/">Cities</NavLink>
+              <NavLink currentRoute={route} to="/cities">Cities</NavLink>
               <NavLink currentRoute={route} to="https://saturdays.ai/proyectos/">Projects</NavLink>
               <NavLink currentRoute={route} to="https://saturdays.ai/create-your-own-ai-saturdays/">Join Us</NavLink>
               {/* burger menu */}
