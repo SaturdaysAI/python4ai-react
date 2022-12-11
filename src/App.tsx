@@ -12,6 +12,7 @@ import Courses from "./pages/Courses"
 import About from "./pages/About"
 import MasterIAOnline from "./pages/MasterIAOnline"
 import Cities from "./pages/Cities"
+import Contact from "./pages/Contact"
 const Home = lazy(() => import("./pages/Home"))
 const PythonCourse = lazy(() => import("./pages/PythonCourse"))
 
@@ -28,6 +29,7 @@ const App: FC = () => {
             <Route path="/about" element={<About />} />
             <Route path="/master-ia-online" element={<MasterIAOnline />} />
             <Route path="/cities" element={<Cities />} />
+            <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<ErrorPage />} />
           </Routes>
         </Suspense>

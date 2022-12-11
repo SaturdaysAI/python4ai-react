@@ -80,7 +80,7 @@ const Navbar: FC = () => {
                     <NavLink to="https://saturdays.ai/ai-4-schools/">Ai 4 Schools</NavLink>
                     <NavLink to="https://saturdays.ai/fridais-4-business/">Ai 4 Business</NavLink>
                     <NavLink to="https://saturdays.ai/partners/">Partners</NavLink>
-                    <NavLink to="https://saturdays.ai/contact/">Contact</NavLink>
+                    <NavLink to="/contact">Contact</NavLink>
                   </div>
               </div>
             </div>
